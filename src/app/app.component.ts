@@ -9,5 +9,6 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+  imgSrc = 'new.png';
   title = 'ANGULAR STARTER By Saurabh';
 }

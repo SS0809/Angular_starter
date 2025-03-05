@@ -1,19 +1,27 @@
 <style>
-  main , div {
+  main, div {
     text-align: center;
     margin-top: 50px;
   }
   h1 {
     color: #00f;
   }
+  .error {
+    color: red;
+    display: block;
+    margin-top: 5px;
+  }
 </style>
-<main>
-  <h1>{{this.title}}</h1>
-  <!-- property binding -->
-  <img src="{{this.imgSrc}}" width="200" (click)="onClick()" /> 
-  <!-- event binding -->
-</main>
+
 <div>
-  <h1>{{this.username}}</h1>
-  <input type="text" [(ngModel)]="username" />
+  <h1>{{ title + username }}</h1>
+  <!-- Property binding for image source -->
+  <img [src]="imgSrc" width="200" (click)="onClick($event)" />
+</div>
+
+<div>
+  <!-- Two-way binding using ngModel -->
+  <input type="text" [(ngModel)]="username" (input)="onEvent()"/>
+  <!-- Display error message properly -->
+  <span class="error">{{ usernameerror }}</span>
 </div>

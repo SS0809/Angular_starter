@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
 export class AppComponent {
   username: string = ""; //two way binding
   usernameerror: string = ""; //two way binding
-  imgSrc = 'new.png';//property binding
+  imgSrc = 'assets/new.png';//property binding
   title = 'ANGULAR STARTER By ';
   url = 'https://www.bridgelabz.com';
 

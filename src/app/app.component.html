@@ -9,7 +9,8 @@
 </style>
 <main>
   <h1>{{this.title}}</h1>
-  <img src="{{this.imgSrc}}" width="200">
   <!-- property binding -->
+  <img src="{{this.imgSrc}}" width="200" (click)="onClick()" /> 
+  <!-- event binding -->
 </main>
 <router-outlet />

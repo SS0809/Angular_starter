@@ -10,5 +10,15 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   imgSrc = 'new.png';//property binding
-  title = 'ANGULAR STARTER By Saurabh';
+  title = 'ANGULAR STARTER';
+  url = 'https://www.bridgelabz.com';
+
+  ngOnInit() {
+    this.title = 'ANGULAR STARTER By Saurabh';
+  }
+
+  onClick() {
+    console.log('Button Clicked');
+    window.open(this.url, '_blank');
+  }
 }

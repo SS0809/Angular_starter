@@ -1,5 +1,5 @@
 <style>
-  main {
+  main , div {
     text-align: center;
     margin-top: 50px;
   }
@@ -13,4 +13,7 @@
   <img src="{{this.imgSrc}}" width="200" (click)="onClick()" /> 
   <!-- event binding -->
 </main>
-<router-outlet />
+<div>
+  <h1>{{this.username}}</h1>
+  <input type="text" [(ngModel)]="username" />
+</div>
